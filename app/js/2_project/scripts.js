@@ -6,6 +6,10 @@
     el: '#app',
     data: {
       message: 'Hello Vue!'
+    },
+    created: function() {
+      console.log('First Vue app created!');
+      console.log('This instance\'s message is:', this.message);
     }
   });
 
