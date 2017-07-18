@@ -10,7 +10,12 @@
           { text: 'Learn JavaScript' },
           { text: 'Learn Vue' },
           { text: 'Build something awesome' }
-        ]
+        ],
+        person: {
+          firstName: 'Michael',
+          lastName: 'van den Oudenalder',
+          age: 30
+        }
       }
     });
   }

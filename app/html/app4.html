@@ -12,10 +12,15 @@
   <div id="app-4">
     <h2>app-4: v-for binding</h2>
     <ol>
-      <li v-for="todo in todos">
-        {{ todo.text }}
+      <li v-for="(todo, index) in todos">
+        Index: {{ index }}. {{ todo.text }}
       </li>
     </ol>
+    <ul>
+      <li v-for="(data, key, index) in person">
+        {{ index }}. {{ key }}: {{ data }}.
+      </li>
+    </ul>
   </div>
 
   <!--=include partials/footerscripts.html  -->
