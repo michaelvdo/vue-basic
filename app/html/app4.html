@@ -12,7 +12,7 @@
   <div id="app-4">
     <h2>app-4: v-for binding</h2>
     <ol>
-      <li v-for="(todo, index) in todos">
+      <li v-for="(todo, index) in todos" v-bind:key="index">
         Index: {{ index }}. {{ todo.text }}
       </li>
     </ol>
@@ -20,6 +20,20 @@
       <li v-for="(data, key, index) in person">
         {{ index }}. {{ key }}: {{ data }}.
       </li>
+    </ul>
+    <div>
+      <span v-for="n in 10">{{ n - 1 }}</span>
+    </div>
+    <ul>
+      <li v-for="(todo, index) in todos" v-if="index >= 2">
+        {{ todo.text }}
+      </li>
+    </ul>
+    <ul>
+      <li v-for="n in evenEntries">{{ n }}</li>
+    </ul>
+    <ul>
+      <li v-for="n in even()">{{ n }}</li>
     </ul>
   </div>
 

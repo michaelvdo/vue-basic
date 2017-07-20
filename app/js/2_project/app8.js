@@ -20,7 +20,7 @@
           return value.split('').reverse().join('');
         }
       },
-      methods: {
+      computed: {
         reverseMessage: function() {
           return this.message.split('').reverse().join('');
         }
