@@ -12,6 +12,8 @@
   <div id="app-1">
     <h2>Mustache templating (app-1)</h2>
     {{ message }}
+    <h2>Child component</h2>
+    <child v-bind:parent-msg="parentMsg"></child>
   </div>
 
   <!--=include partials/footerscripts.html  -->
