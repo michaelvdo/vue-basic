@@ -22,9 +22,11 @@ To toggle multiple elements using the `v-if` directive, you can add it to a `<te
 ```
 
 `key`
+
 Vue reuses elements for content whenever possible. This might provide benefits for the end user, for instance when a login type is changed but the input fields remain in place with the user's filled in content, but this might not always be desirable. If this is the case, one can add a `key` directive with a unique string to tell the Vue 'instance' not to reuse that particular element but to render it anew.
 
 `v-show`
+
 As `v-if`, with the difference that with `v-show`, the element is always rendered but hidden using the `display` CSS property.
 
 In general, prefer `v-show` if you need to toggle the element often and prefer `v-if` if the condition is unlikely to change at runtime.
